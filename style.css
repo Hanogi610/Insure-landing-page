@@ -31,7 +31,7 @@ body {
   padding-right: 15%;
   font-family: "DM Serif Display";
   background: url('images/bg-pattern-intro-left-desktop.svg') 0 31% no-repeat, url('images/bg-pattern-intro-right-desktop.svg') 100% 6% no-repeat, url('images/image-intro-desktop.jpg') 76% 12% no-repeat;
-  background-size: auto,auto,38% 35%;
+  background-size: auto, auto, 38% 35%;
 }
 .nav-bar {
   padding: 5px;
@@ -113,10 +113,12 @@ body {
 .first-section button:hover {
   background-color: white;
   color: hsl(256, 26%, 20%);
+  font-weight: 700;
 }
 .first-section .special-top {
   font-family: sans-serif;
   padding-top: 5%;
+  user-select: none;
 }
 .second-section {
   padding-top: 100px;
@@ -125,6 +127,7 @@ body {
 }
 .second-section .special-top {
   font-family: sans-serif;
+  user-select: none;
 }
 .second-section h1 {
   font-size: 4em;
@@ -153,7 +156,7 @@ body {
   color: white;
   background-image: url('images/bg-pattern-how-we-work-desktop.svg');
   background-repeat: no-repeat;
-  background-position: right ;
+  background-position: right;
 }
 .second-section .second-half h2 {
   width: 37%;
