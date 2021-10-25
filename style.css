@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v15/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqqFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v15/qkBIXvYC6trAT55ZBi1ueQVIjQTDH52qFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmserifdisplay/v5/-nFnOHM81r4j6k0gjAW3mujVU2B2K_c.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(to bottom, white 0%, white 4%, hsl(256, 26%, 20%) 4%, hsl(256, 26%, 20%) 38%, white 38%, white 100%);
+}
+.container {
+  padding-left: 15%;
+  padding-right: 15%;
+  font-family: "DM Serif Display";
+  background: url('images/bg-pattern-intro-left-desktop.svg') 0 31% no-repeat, url('images/bg-pattern-intro-right-desktop.svg') 100% 6% no-repeat, url('images/image-intro-desktop.jpg') 76% 12% no-repeat;
+  background-size: auto,auto,38% 35%;
+}
+.nav-bar {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(273, 4%, 51%);
+  font-family: "DM Serif Display";
+  font-weight: 400;
+}
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav-bar ul li {
+  letter-spacing: 0.1rem;
+  padding-right: 20px;
+}
+.nav-bar ul li button {
+  background-color: #fff;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  border: 2px solid hsl(256, 26%, 20%);
+  border-radius: 0;
+  width: 130%;
+  height: 150%;
+  margin-top: -5px;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+.nav-bar ul li button:hover {
+  background-color: hsl(256, 26%, 20%);
+  color: white;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: hsl(273, 4%, 51%);
+}
+.nav-bar ul li a:hover {
+  color: hsl(256, 26%, 20%);
+}
+.nav-bar img {
+  padding: 20px 0;
+}
+.first-section {
+  position: relative;
+  height: 90vh;
+  margin-right: 50%;
+  padding: 50px 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.first-section h1 {
+  font-size: 4rem;
+  padding-top: 40px;
+  padding-right: 15%;
+}
+.first-section p {
+  padding-right: 13%;
+  color: hsl(273, 4%, 51%);
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.first-section button {
+  background-color: hsl(256, 26%, 20%);
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  border: 2px solid #fff;
+  border-radius: 0;
+  width: 23%;
+  height: 3em;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  color: white;
+}
+.first-section button:hover {
+  background-color: white;
+  color: hsl(256, 26%, 20%);
+}
+.first-section .special-top {
+  font-family: sans-serif;
+  padding-top: 5%;
+}
+.second-section {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.second-section .special-top {
+  font-family: sans-serif;
+}
+.second-section h1 {
+  font-size: 4em;
+  padding: 50px 0 80px 0;
+}
+.second-section .first-half {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 10%;
+}
+.second-section .first-half .three h4 {
+  padding: 25px 0 15px 0;
+}
+.second-section .first-half .three p {
+  color: hsl(273, 4%, 51%);
+}
+.second-section .second-half {
+  margin-top: 10%;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(256, 26%, 20%);
+  color: white;
+  background-image: url('images/bg-pattern-how-we-work-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: right ;
+}
+.second-section .second-half h2 {
+  width: 37%;
+  font-size: 2.5rem;
+}
+.second-section .second-half button {
+  padding: 5px;
+  height: 2.5em;
+  width: 15%;
+  font-family: Karla;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+.second-section .second-half button:hover {
+  background-color: white;
+  color: hsl(256, 26%, 20%);
+}
+footer nav {
+  border-bottom: 1px solid hsl(273, 4%, 51%);
+  height: 70px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(273, 4%, 51%);
+  font-family: "DM Serif Display";
+  font-weight: 400;
+}
+footer nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+footer nav ul li {
+  letter-spacing: 0.1rem;
+  padding-right: 20px;
+}
+footer nav ul li button {
+  background-color: #fff;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  border: 2px solid hsl(256, 26%, 20%);
+  border-radius: 0;
+  width: 130%;
+  height: 150%;
+  margin-top: -5px;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+footer nav ul li button:hover {
+  background-color: hsl(256, 26%, 20%);
+  color: white;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: hsl(273, 4%, 51%);
+}
+footer nav ul li a:hover {
+  color: hsl(256, 26%, 20%);
+}
+footer nav img {
+  padding: 20px 0;
+}
+footer nav img {
+  height: 20px;
+}
+footer .foot {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+footer .foot .feet {
+  font-size: 14px;
+  font-family: Karla;
+  padding-right: 150px;
+  display: flex;
+  flex-direction: column;
+}
+footer .foot .feet h3 {
+  color: hsl(273, 4%, 51%);
+  width: 100%;
+  padding: 30px 0;
+}
+footer .foot .feet a {
+  color: hsl(256, 26%, 20%);
+}
+footer .foot .feet a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .foot .feet a h4 {
+  margin: 0;
+  padding: 10px 0;
+}
