@@ -24,14 +24,27 @@
   padding: 0;
 }
 body {
-  background-image: linear-gradient(to bottom, white 0%, white 4%, hsl(256, 26%, 20%) 4%, hsl(256, 26%, 20%) 38%, white 38%, white 100%);
+  background-image: linear-gradient(to bottom, white 0%, white 3%, hsl(256, 26%, 20%) 3%, hsl(256, 26%, 20%) 30%, white 30%, white 100%);
+}
+@media (max-width: 500px) {
+  body {
+    background-image: linear-gradient(to bottom, white 0%, white 1.2%, hsl(256, 26%, 20%) 1.2%, hsl(256, 26%, 20%) 31%, white 31%, white 100%);
+  }
 }
 .container {
   padding-left: 15%;
   padding-right: 15%;
   font-family: "DM Serif Display";
-  background: url('images/bg-pattern-intro-left-desktop.svg') 0 31% no-repeat, url('images/bg-pattern-intro-right-desktop.svg') 100% 6% no-repeat, url('images/image-intro-desktop.jpg') 76% 12% no-repeat;
-  background-size: auto, auto, 38% 35%;
+  background: url('images/bg-pattern-intro-left-desktop.svg') 0 25% no-repeat, url('images/bg-pattern-intro-right-desktop.svg') 100% 4% no-repeat, url('images/image-intro-desktop.jpg') 76% 10% no-repeat;
+  background-size: auto, auto, 38% 30%;
+}
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+    padding: 0;
+    background: url('images/bg-pattern-intro-left-mobile.svg') 0% 17% no-repeat, url('images/bg-pattern-intro-right-mobile.svg') 100% 30% no-repeat;
+    background-size: 50%, 30%;
+  }
 }
 .nav-bar {
   padding: 5px;
@@ -42,6 +55,9 @@ body {
   color: hsl(273, 4%, 51%);
   font-family: "DM Serif Display";
   font-weight: 400;
+}
+.nav-bar #exit {
+  display: none;
 }
 .nav-bar ul {
   list-style: none;
@@ -75,12 +91,86 @@ body {
 .nav-bar ul li a:hover {
   color: hsl(256, 26%, 20%);
 }
-.nav-bar img {
+.nav-bar #logo {
   padding: 20px 0;
+}
+@media (max-width: 500px) {
+  .nav-bar #logo {
+    padding: 0 10px;
+    width: 20%;
+  }
+  .nav-bar ul {
+    display: none;
+  }
+  .nav-bar .mobile {
+    display: inline-block;
+  }
+  .nav-bar .mobile button {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+  }
+  .nav-bar ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .nav-bar ul li {
+    margin: 5px;
+    padding: 0;
+  }
+  .nav-bar ul li button {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0 50px 0;
+  }
+}
+.mobile {
+  display: none;
+}
+#direct {
+  display: none;
+}
+@media (max-width: 500px) {
+  #direct {
+    background: url('images/bg-pattern-mobile-nav.svg') 15% 150% no-repeat;
+    background-size: 80%;
+  }
+  #direct ul {
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  #direct ul li {
+    padding: 10px 0;
+  }
+  #direct ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  #direct ul li button {
+    border: 1px solid white;
+    padding: 10px 20px ;
+    margin-bottom: 150px;
+    background-color: hsl(256, 26%, 20%);
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    border-radius: 0;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    color: white;
+  }
+  #direct ul li button:hover {
+    transform: scale(1.1);
+  }
 }
 .first-section {
   position: relative;
-  height: 90vh;
   margin-right: 50%;
   padding: 50px 0;
   color: white;
@@ -120,14 +210,57 @@ body {
   padding-top: 5%;
   user-select: none;
 }
+@media (max-width: 500px) {
+  .first-section .special-top {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .first-section {
+    padding: 0;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .first-section .mobile {
+    display: inline-block;
+    width: 96.7vw;
+  }
+  .first-section h1 {
+    margin: 0;
+    padding: 100px 10px 10px 10px;
+  }
+  .first-section p {
+    padding: 0 20px 40px 20px;
+    font-size: 1.2em;
+    color: white;
+  }
+  .first-section button {
+    padding: 10px 30px;
+    width: auto;
+  }
+}
 .second-section {
-  padding-top: 100px;
+  padding-top: 500px;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .second-section {
+    padding-top: 200px;
+  }
 }
 .second-section .special-top {
   font-family: sans-serif;
   user-select: none;
+}
+@media (max-width: 500px) {
+  .second-section .special-top {
+    font-size: 2em;
+    font-weight: 400;
+  }
 }
 .second-section h1 {
   font-size: 4em;
@@ -144,6 +277,14 @@ body {
 }
 .second-section .first-half .three p {
   color: hsl(273, 4%, 51%);
+}
+@media (max-width: 500px) {
+  .second-section .first-half {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 .second-section .second-half {
   margin-top: 10%;
@@ -175,6 +316,39 @@ body {
 .second-section .second-half button:hover {
   background-color: white;
   color: hsl(256, 26%, 20%);
+}
+@media (max-width: 500px) {
+  .second-section .second-half {
+    padding: 50px;
+    margin: 150px 0;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('images/bg-pattern-how-we-work-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .second-section .second-half h2 {
+    width: 100%;
+    padding: 0 0 25px 0;
+  }
+  .second-section .second-half button {
+    border-width: 2px;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 60%;
+  }
+}
+footer {
+  padding: 30px 0;
+  margin-top: 150px;
+  background-color: hsl(0, 0%, 98%);
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 30px;
+    background: url('images/bg-pattern-footer-mobile.svg') 0% 0% no-repeat;
+    background-size: 80%;
+  }
 }
 footer nav {
   border-bottom: 1px solid hsl(273, 4%, 51%);
@@ -226,6 +400,12 @@ footer nav img {
 footer nav img {
   height: 20px;
 }
+@media (max-width: 500px) {
+  footer nav {
+    flex-direction: column;
+    height: 120px;
+  }
+}
 footer .foot {
   display: flex;
   flex-direction: row;
@@ -253,4 +433,13 @@ footer .foot .feet a:hover {
 footer .foot .feet a h4 {
   margin: 0;
   padding: 10px 0;
+}
+@media (max-width: 500px) {
+  footer .foot {
+    text-align: center;
+    flex-direction: column;
+  }
+  footer .foot .feet {
+    padding: 0;
+  }
 }

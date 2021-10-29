@@ -16,15 +16,32 @@
 <body>
   <div class="container">
     <nav class="nav-bar">
-      <img src="./images/logo.svg" alt="">
+      <img id="logo" src="./images/logo.svg" alt="">
+      <form id='controller' class="mobile" action="#">
+        <button id="menu">
+          <img src="./images/icon-hamburger.svg" alt="">
+        </button>
+        <button id="exit">
+          <img src="./images/icon-close.svg" alt="">
+        </button>
+      </form>
       <ul>
-        <li><a href="#">How we work</a></li>
+        <li><a href="#how-we-work">How we work</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Account</a></li>
         <li><button>View plans</button></li>
       </ul>
     </nav>
+    <div id="direct">
+      <ul>
+        <li><a href="#how-we-work">How we work</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Account</a></li>
+        <li><button>View plans</button></li>
+      </ul>
+    </div>
     <div class="first-section">
+      <img class="mobile" src="./images/image-intro-mobile.jpg" alt="">
       <span class="special-top">___________</span>
       <h1>Humanizing your insurance.</h1>
       <p>Get your life insurance coverage easier and faster. We blend our expertise
@@ -60,7 +77,7 @@
           </div>
         </div>
       </div>
-      <div class="second-half">
+      <div class="second-half" id="how-we-work">
         <h2>Find out more about how we work</h2>
         <button>HOW WE WORK</button>
       </div>
@@ -137,6 +154,7 @@
       </div>
     </footer>
   </div>
+  <script type="text/javascript" src="./index.js"></script>
 </body>
 
 </html>
